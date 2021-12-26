@@ -2,9 +2,9 @@
   "name": "navidad",
   "version": "1.0.0",
   "description": "node-firebase-express-mongo",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "helmet": "^4.6.0",
     "loglevel": "^1.8.0",
     "mongoose": "^6.1.2",
+    "morgan": "^1.10.0",
     "npm-check-updates": "^12.0.5",
     "validator": "^13.7.0"
   },
