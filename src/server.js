@@ -6,6 +6,7 @@ const config = require('./config/config');
 const cors = require('cors');
 
 //insert Ruotes 
+const { UserRouter } = require("./routes");
 
 const app = express();
 
@@ -25,6 +26,9 @@ app.use(
     origin: config.client.URL,
   }),
 );
+
+app.use("/users", UserRouter);
+
 
 module.exports = app
 
