@@ -2,10 +2,12 @@ const express = require("express");
 
 const { notFound } = require("../middlewares");
 const { UserController } = require('../controllers');
+const authMiddleware=require('../middlewares/auth')
 
 const UserRouter = express.Router();
+UserRouter.use(authMiddleware)
 
-UserRouter.get("/", UserController.getUsers);
+UserRouter.get("/", UserController.getUsers,authMiddleware);
 UserRouter.get("/:idUser", UserController.getUser, notFound);
 UserRouter.post("/", UserController.createUser);
 UserRouter.put("/:idUser", UserController.updateUser, notFound);

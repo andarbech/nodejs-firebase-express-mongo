@@ -16,7 +16,7 @@ SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 export default function App() {
   return (
     <>
-    <Header/>
+      <Header />
     <div className="container">
       <div className="title_wrapper">
         <div className="reactLogo">
