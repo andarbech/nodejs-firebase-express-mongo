@@ -1,3 +1,4 @@
+
 /* import "./styles.css"
 function SigUp() {
     return (
@@ -9,7 +10,7 @@ function SigUp() {
 export default SigUp */
 
 // import { useState, useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink} from "react-router-dom";
 
 // import Button from "../../components/Button/Button";
 // import Header from "../../components/Header/Header";
@@ -67,6 +68,25 @@ function SignUp() {
 
     return (
         <>
+            <header className="bg-dark mb-4" >
+                <div className="container-fluid">
+                    <div className="row">
+                        <nav className="navbar navbar-expand navbar-dark">
+                            <NavLink
+                                exact
+                                activeClassName="active"
+                                className="navbar-brand"
+                                to="/"
+                            >
+                                Home
+                            </NavLink>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+
+
             <main className="container p-4 mt-5">
                 <div className="row flex-column align-items-center">
                     <div className="col col-lg-6">
@@ -104,8 +124,8 @@ function SignUp() {
                                             className="form-control"
                                             id="email"
                                             type="email"
-                                            // value={email}
-                                            // onChange={(e) => setEmail(e.target.value)}
+                                        // value={email}
+                                        // onChange={(e) => setEmail(e.target.value)}
                                         />
                                     </div>
                                     <div className="mb-3">
@@ -116,12 +136,12 @@ function SignUp() {
                                             className="form-control"
                                             id="password"
                                             type="password"
-                                            // value={password}
-                                            // onChange={(e) => setPassword(e.target.value)}
+                                        // value={password}
+                                        // onChange={(e) => setPassword(e.target.value)}
                                         />
                                     </div>
-                                    <button  className="btn btn-success btn-primary" type="submit"
-                                        // disabled={loading}
+                                    <button className="btn btn-success btn-primary" type="submit"
+                                    // disabled={loading}
                                     > Sign Up
                                         {/* {loading ? "Signing up..." : "Sign Up"} */}
                                     </button>

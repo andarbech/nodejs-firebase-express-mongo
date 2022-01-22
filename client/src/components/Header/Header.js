@@ -15,7 +15,7 @@ function Header() {
                             >
                                 Home
                             </NavLink>
-                            <ul className="navbar-nav mr-10">
+{/*                             <ul className="navbar-nav mr-10">
                                 <li className="nav-item">
                                     <NavLink
                                         exact
@@ -26,7 +26,7 @@ function Header() {
                                         Entrar
                                     </NavLink>
                                 </li>
-                            </ul>
+                            </ul> */}
                             <ul className="navbar-nav mr-10">
                                 <li className="nav-item">
                                     <NavLink
@@ -39,7 +39,7 @@ function Header() {
                                     </NavLink>
                                 </li>
                             </ul>
-                            <ul className="navbar-nav">
+                            {/* <ul className="navbar-nav">
                                 <li className="nav-item me-2">
                                     <NavLink
                                         exact
@@ -50,7 +50,7 @@ function Header() {
                                         AllProducts
                                     </NavLink>
                                 </li>
-                            </ul>
+                            </ul> */}
                         </nav>
                     </div>
                 </div>
